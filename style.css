@@ -25,6 +25,10 @@ body{
     padding: 15px;
 }
 
+.header__left{
+    cursor: pointer;
+}
+
 .header__right{
 display: flex;
 font-family: Mulish;
@@ -42,19 +46,25 @@ justify-content: space-between;
     text-decoration: none;
     color: #1F1534;
 }
-
-.mainBody img{
-    padding: 20px;
-    width: 120px;
-    height: 100px;
-}
-
-.page__one{
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
     display: flex;
-    position: relative;
+    align-items: center;
 }
 
-.page__one img{
-    width: 500;
-    height: 500;
+.our__services{
+    margin: 0 auto;
+    align-items: center;
+    max-width: 95%;
+    width: 1130px;
+}
+
+.main__services p{
+    align-items: center;
+}
+
+main__services h3{
+    align-content: center;
 }
