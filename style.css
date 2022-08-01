@@ -3,7 +3,7 @@
 * {
     margin: 0;
     padding: 5;
-    box-sizing: border-box;
+
 }
 
 body{
@@ -14,7 +14,7 @@ body{
     font-weight: 400;
     color: rgb(3, 3, 3);
     max-height: 4rem;
-    overflow: hidden;
+    overflow: visible;
   }
 
 .header{
@@ -54,17 +54,33 @@ justify-content: space-between;
     align-items: center;
 }
 
-.our__services{
-    margin: 0 auto;
-    align-items: center;
-    max-width: 95%;
+.services{
+    background: #E5E5E5;
+    width: 100%;
+    padding: 100px 0px;
+}
+
+.services__title h2{
+    font-size: 30px;
     width: 1130px;
+    margin: 30px auto;
+    text-align: center;
 }
 
-.main__services p{
+.services__box{
+    display: flex;
+    justify-content: center;
     align-items: center;
+    min-height: 400px;
 }
 
-main__services h3{
-    align-content: center;
+.services__card{
+    height: 200px;
+    width: 200px;
+    padding: 20px 35px;
+    margin: 15px;
+    position: relative;
+    overflow: visible;
+    border-radius: 20px;
+    background: #FFFFFF;
 }
