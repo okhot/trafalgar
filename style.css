@@ -8,13 +8,15 @@
 
 body{
   font-family: 'Mulish', sans-serif;
-  background-color: #E5E5E5;
+  background-color: white;
     font-size: 15px;
     line-height: normal;
     font-weight: 400;
     color: rgb(3, 3, 3);
     max-height: 4rem;
     overflow: visible;
+    
+    
   }
 
 .header{
@@ -55,9 +57,10 @@ justify-content: space-between;
 }
 
 .services{
-    background: #E5E5E5;
+    background-image: #E5E5E5;
     width: 100%;
     padding: 100px 0px;
+  
 }
 
 .services__title h2{
@@ -68,10 +71,15 @@ justify-content: space-between;
 }
 
 .services__box{
-    display: flex;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
     justify-content: center;
     align-items: center;
     min-height: 400px;
+    background-image: url(assets/Vector.png);
+    background-position: left; 
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .services__card{
@@ -83,4 +91,250 @@ justify-content: space-between;
     overflow: visible;
     border-radius: 20px;
     background: #FFFFFF;
+    box-shadow: 10px 10px 8px #888888;
+}
+.services__title p{
+    text-align: center;
+}
+.virtual__healtcare img{
+     margin-left: 20px;
+     margin-right: 20px;
+     height: 500px;
+}
+
+.virtual__healtcare{
+    margin-bottom: 40px;
+}
+
+.virtual__healtcare h2{
+    font-size: 50px;
+}
+
+.virtual__healtcare p{
+  font-size: medium;   
+}
+
+.virtual__healtcare button{
+    border-radius: 8px;
+    font-size: large;
+    background-color: white;
+    color: black;
+    border: 2px solid #5A98F2;
+}
+
+button:hover {
+    background-color: #5A98F2;
+    color: white;
+  }
+
+.main__text p{
+    margin-bottom: 30px;
+}
+
+.main__text button{
+    margin-bottom: 30px;
+}
+
+.courses-container{
+    justify-content: center;
+}
+
+.course {
+    position: center;
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+	display: flex;
+	max-width: 100%;
+	margin: 20px;
+	overflow: hidden;
+	width: 700px;
+}
+
+.course h6 {
+	opacity: 0.6;
+	margin: 0;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+.course h2 {
+	letter-spacing: 1px;
+	margin: 10px 0;
+}
+
+.course-preview {
+	background-color: #2A265F;
+	color: #fff;
+	padding: 30px;
+	max-width: 250px;
+}
+
+.course-preview img{
+    border-radius: 50%;
+}
+
+.course-preview a {
+	color: #fff;
+	display: inline-block;
+	font-size: 12px;
+	opacity: 0.6;
+	margin-top: 30px;
+	text-decoration: none;
+}
+
+.course-info {
+	padding: 30px;
+	position: relative;
+	width: 100%;
+}
+
+.progress-container {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	text-align: right;
+	width: 150px;
+}
+
+.progress {
+	background-color: #ddd;
+	border-radius: 3px;
+	height: 5px;
+	width: 100%;
+}
+
+.progress::after {
+	border-radius: 3px;
+	background-color: #2A265F;
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 5px;
+	width: 66%;
+}
+
+.progress-text {
+	font-size: 10px;
+	opacity: 0.6;
+	letter-spacing: 1px;
+}
+
+.btn {
+	background-color: #2A265F;
+	border: 0;
+	border-radius: 50px;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+	color: #fff;
+	font-size: 16px;
+	padding: 12px 25px;
+	position: absolute;
+	bottom: 30px;
+	right: 30px;
+	letter-spacing: 1px;
+}
+.feedback{
+    display: flex;
+    width: 1040px;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    padding-left: 350px;
+}
+
+.articles{
+    display: flex;
+    width: 1040px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: center;
+    position: absolute;
+    margin-left: 250px;
+  }
+  .card {
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 300px;
+  }
+  .card-header img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    min-height: 250px;
+  }
+  
+  .tag {
+    background: #cccccc;
+    border-radius: 50px;
+    font-size: 12px;
+    margin: 0;
+    color: #fff;
+    padding: 2px 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .tag-teal {
+    background-color: #47bcd4;
+  }
+  .tag-purple {
+    background-color: #5e76bf;
+  }
+  .tag-pink {
+    background-color: #cd5b9f;
+  }
+  
+  .card-body p {
+    font-size: 13px;
+    margin: 0 0 40px;
+  }
+  .user {
+    display: flex;
+    margin-top: auto;
+  }
+  
+  .user img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  .user-info h5 {
+    margin: 0;
+  }
+  .user-info small {
+    color: #545d7a;
+  }
+
+.footer{
+    background-color: #5A98F2;
+    padding: 70px 0;
+    margin-top: 30px;
+}
+
+.container{
+    max-width: 1000px;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+}
+
+.ul{
+    list-style: none;
+}
+
+.footer__col{
+    width: 25%;
+    padding: 0 15px;
 }
